@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Konfigurasi Design Token Tailwind v4 */
+@theme {
+  /* Palet Zamrud (Utama) */
+  --color-zamrud-utama: #0F6E56;
+  --color-zamrud-gelap: #085041;
+  --color-zamrud-muda: #E1F5EE;
+  
+  /* Aksen */
+  --color-aksen-emas: #C9A24A;
+  
+  /* Latar */
+  --color-latar-halaman: #F7F5EF;
+  --color-latar-dalam: #F4F2EA;
+  --color-latar-kartu: #FFFFFF;
+  
+  /* Teks & Garis */
+  --color-teks-utama: #1F2A26;
+  --color-teks-sekunder: #5B6B65;
+  --color-garis-isian: #7F918A;
+  --color-garis-kartu: #E3E0D5;
+  --color-garis-pemisah: #D3D1C7;
+
+  /* Font Families */
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-arab: "Amiri", serif;
+}
+
+/* Base Styles untuk seluruh aplikasi */
+@layer base {
+  body {
+    background-color: var(--color-latar-halaman);
+    color: var(--color-teks-utama);
+    font-family: var(--font-sans);
+  }
+}

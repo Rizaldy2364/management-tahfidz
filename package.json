@@ -1,0 +1,15 @@
+{
+  "name": "aplikasi-tahfidz",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"green,cyan\" --kill-others-on-fail \"pnpm --dir backend run dev\" \"pnpm --dir frontend run dev\"",
+    "dev:backend": "pnpm --dir backend run dev",
+    "dev:frontend": "pnpm --dir frontend run dev",
+    "install:all": "pnpm install && pnpm --dir backend install && pnpm --dir frontend install",
+    "typecheck": "pnpm --dir backend exec tsc --noEmit && pnpm --dir frontend exec tsc --noEmit"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
